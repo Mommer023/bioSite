@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    background-color: lightgrey;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.about-container {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+}
+.left {
+    width: 40%;
+    flex: 1;
+    padding: 10px;
+}
+image {
+    max-width: 400px;
+}
+.right {
+    flex: 1;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.right h1 {
+    text-align: center;
+}
+header {
+    padding-top: 20px;
+}
+
+h1 {
+    column-span: 1;
+    font-family: adelia;
+    color: #342316;
+}
+div {
+    column-gap: 40px;
+}
+
+.image {
+    float: right;
+    width: 300px;
+    height: 170px;
+}
+
+
+footer {
+    width: 100%;
+    padding-right: 10px;
+    position: absolute;
+    background-color: teal;
+    bottom: 0;
+}
+footer p {
+    color: white;
+    font-weight: 400;
+    float: right;
+    padding-right: 10px;
+    font-style: italic;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+
+}
+#home-btn {
+    display: inline-block;
+    font-family: "American Typewriter";
+    padding: 10px 40px;
+    background-color: #1A5173; /* Choose your desired background color */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px; /* Adjust the border-radius to control the roundness */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+    margin-right: 30px;
+    margin-left: 60px;
+}
+
+/* */
+#about-btn {
+    display: inline-block;
+    font-family: "American Typewriter";
+    padding: 10px 35px;
+    background-color: #1A5173; /* Choose your desired background color */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px; /* Adjust the border-radius to control the roundness */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 10%;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #008080;
+
+    text-align: center;
+}
+figure {
+    text-align: center;
+    color: #008080;
+
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+}
+#hobby-container h1 {
+    text-align: center;
+}
