@@ -1,17 +1,44 @@
+/*General Styles */
+
 body {
     display: flex;
     background-color: lightgrey;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     height: 100vh;
     margin: 0;
 }
+
+footer {
+    width: 100%;
+    padding-right: 10px;
+    position: absolute;
+    background-color: teal;
+    bottom: 0;
+}
+footer p {
+    color: white;
+    font-weight: 400;
+    float: right;
+    padding-right: 10px;
+    font-style: italic;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+
+}
+
+/**********************************************************************/
+
+/*About Page Styles */
 .about-container {
     display: flex;
     max-width: 1000px;
     margin: auto;
 }
-.left {
+
+.about-left {
     width: 40%;
     flex: 1;
     padding: 10px;
@@ -19,12 +46,12 @@ body {
 image {
     max-width: 400px;
 }
-.right {
+.about-right {
     flex: 1;
     box-sizing: border-box;
     margin-top: 10px;
 }
-.right h1 {
+.about-right h1 {
     text-align: center;
 }
 header {
@@ -33,7 +60,7 @@ header {
 
 h1 {
     column-span: all;
-    font-family: adelia;
+    font-family: "adelia", sans-serif;
     color: #342316;
 }
 div {
@@ -68,7 +95,7 @@ footer a {
 }
 #home-btn {
     display: inline-block;
-    font-family: "American Typewriter";
+    font-family: "American Typewriter", sans-serif;
     padding: 10px 40px;
     background-color: #1A5173; /* Choose your desired background color */
     text-align: center;
@@ -84,7 +111,7 @@ footer a {
 /* */
 #about-btn {
     display: inline-block;
-    font-family: "American Typewriter";
+    font-family: "American Typewriter", sans-serif;
     padding: 10px 35px;
     background-color: #1A5173; /* Choose your desired background color */
     text-align: center;
@@ -95,16 +122,17 @@ footer a {
     color: white;
 }
 
+/*hobby Styles */
 #image-gallery {
     display: grid;
     grid-template-columns: auto auto auto;
-    margin-top: 10%;
+    margin-top: 0%;
 }
 
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid #008080;
-
+    padding: 0;
     text-align: center;
 }
 figure {
@@ -120,7 +148,10 @@ figcaption {
 #hobby-container h1 {
     text-align: center;
 }
-
+.hobby-description {
+    text-align: center;
+    font-family: "American Typewriter", sans-serif;
+}
 /*index styles*/
 .index-grid-container {
     display: grid;
@@ -138,7 +169,7 @@ figcaption {
 
 #button1 {
     display: inline-block;
-    font-family: "American Typewriter";
+    font-family: "American Typewriter", sans-serif;
     padding: 10px 40px;
     background-color: #1A5173; /* Choose your desired background color */
     text-align: center;
@@ -170,24 +201,61 @@ figcaption {
 
 #quote {
     margin: 20px 0;
-    font-family: "American Typewriter", Arial;
+    font-family: "American Typewriter", sans-serif;
 }
-footer {
-    width: 100%;
-    padding-right: 10px;
-    position: absolute;
-    background-color: teal;
-    bottom: 0;
-}
-footer p {
-    color: white;
-    font-weight: 400;
-    float: right;
-    padding-right: 10px;
-    font-style: italic;
-}
-footer a {
-    text-decoration: none;
-    color: white;
 
+
+
+/* hobby styles*/
+.grid-item img {
+    width: 300px;
+    height: auto;
+}
+.grid-item {
+    background-color: lightgrey;
+    border: none;
+}
+#hobby-container header {
+    text-align: center;
+}
+/*Gallery Styles
+#gallery {
+    display: block;
+    width: 40%;
+}
+.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    width: 50%;
+}
+
+
+#scroll-container img {
+    padding: 10px;
+}
+*/
+#gallery {
+    display: inline-block;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto; /* Center the gallery */
+    width: 100%;
+}
+#gallery header {
+    text-align: center;
+}
+/* Scroll container */
+.scroll-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    overflow-x: scroll; /* Enable horizontal scrolling */
+}
+
+/* Individual images */
+.scroll-container img {
+
+    flex: 0 0 auto; /* Prevent images from shrinking */
 }
