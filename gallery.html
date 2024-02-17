@@ -1,28 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Gallery</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="site.css" type="text/css" rel="stylesheet">
+    <style>
+        .container {
+            text-align: center; /* Align images to the right */
+        }
+        header h1 {
+            text-align: center;
+            font-family: adelia;
+        }
+        footer {
+            width: 100%;
+            padding-right: 10px;
+            position: fixed;
+            background-color: teal;
+            bottom: 0;
+        }
+        footer p {
+            color: white;
+            font-weight: 400;
+            float: right;
+            padding-right: 10px;
+            font-style: italic;
+        }
+        footer a {
+            text-decoration: none;
+            color: white;
+
+        }
+    </style>
 </head>
 <body>
-<div id="gallery">
-    <header>
+<header>
     <h1>Image Gallery</h1>
+</header><br>
+<div class="container">
 
-    </header>
-    <div class="scroll-container">
-        <img src="img/OCC.JPG" alt="Boxes Filled for OCC" width="600" height="auto">
-        <img src="img/friends.JPG" alt="Forest" width="600" height="auto">
-        <img src="img/grandfather.JPG" alt="Northern Lights" width="600" height="auto">
-        <img src="img/swimming.JPG" alt="Mountains" width="600" height="auto">
-        <img src="img/wedding-church.JPG" alt="Kelly with Cash" width="600" height="400">
-        <img src="img/thanksgiving.JPG" alt="BStrong Event" width="600" height="auto">
-        <img src="img/grandsons.JPEG" alt="Grandsons" width="600" height="auto">
-        <img src="img/gizmo.JPEG" alt="Gizmo" width="600" height="auto">
-    </div>
-
+    <img src="img/OCC.JPG" style="width:50%">
+    <img src="img/friends.JPG" style="width:50%">
+    <img src="img/grandsons.JPEG" style="width: 50%">
+    <img src="img/gizmo.JPEG" style="width: 50%">
+    <img src="img/grandfather.JPG" style="width: 50%">
+    <img src="img/swimming.JPG" style="width: 50%">
+    <img src="img/wedding-church.JPG" style="width: 50%">
+    <img src="img/thanksgiving.JPG" style="width: 50%">
 </div>
-
+<footer>
+    <a href="index.html">Return to homepage</a>
+    <p>
+        <a href="hobbies.html">Back to hobbies</a>
+    </p>
+</footer>
 </body>
 </html>

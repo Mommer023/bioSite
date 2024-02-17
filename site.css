@@ -12,7 +12,7 @@ body {
 footer {
     width: 100%;
     padding-right: 10px;
-    position: absolute;
+    position: fixed;
     background-color: teal;
     bottom: 0;
 }
@@ -218,44 +218,12 @@ figcaption {
 #hobby-container header {
     text-align: center;
 }
-/*Gallery Styles
-#gallery {
-    display: block;
-    width: 40%;
-}
-.scroll-container {
-    background-color: #333;
-    overflow: auto;
-    white-space: nowrap;
-    padding: 10px;
-    width: 50%;
-}
 
-
-#scroll-container img {
-    padding: 10px;
+.gallery-container {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
 }
-*/
-#gallery {
-    display: inline-block;
-    max-width: 800px; /* Adjust as needed */
-    margin: 0 auto; /* Center the gallery */
-    width: 100%;
-}
-#gallery header {
+.gallery-container h1 {
     text-align: center;
-}
-/* Scroll container */
-.scroll-container {
-    display: flex; /* Use flexbox for layout */
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    overflow-x: scroll; /* Enable horizontal scrolling */
-}
-
-/* Individual images */
-.scroll-container img {
-
-    flex: 0 0 auto; /* Prevent images from shrinking */
 }
