@@ -1,57 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <title>Gallery</title>
     <style>
-        .container {
-            text-align: center; /* Align images to the right */
+        * {
+            box-sizing: border-box;
         }
-        header h1 {
+        .container h1 {
+            width: 100%;
+            max-width: 800px; /* Limiting the width of the container */
+            margin: 0 auto;
+
+        }
+
+        h1 {
             text-align: center;
             font-family: adelia;
+            color: #342316;
         }
-        footer {
+
+        .gallery-footer {
             width: 100%;
-            padding-right: 10px;
+            padding-right: 5px;
+            padding-left: 10px;
             position: fixed;
-            background-color: teal;
+            background-color: #1A5173;
             bottom: 0;
         }
-        footer p {
+
+        .gallery-footer p {
             color: white;
             font-weight: 400;
-            float: right;
             padding-right: 10px;
+            padding-left: 10px;
             font-style: italic;
         }
+
         footer a {
             text-decoration: none;
             color: white;
-
         }
-    </style>
+        #f-right {
+            float: right;
+        }
+        #f-left {
+            float: left;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            padding-bottom: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+
+</style>
 </head>
 <body>
 <header>
     <h1>Image Gallery</h1>
 </header><br>
 <div class="container">
+    <div class="row">
+        <div class="column">
+            <img src="img/OCC.JPG">
+            <img src="img/thanksgiving.JPG">
+            <img src="img/grandsons.JPEG">
+            <img src="img/wedding-church.JPG">
 
-    <img src="img/OCC.JPG" style="width:50%">
-    <img src="img/friends.JPG" style="width:50%">
-    <img src="img/grandsons.JPEG" style="width: 50%">
-    <img src="img/gizmo.JPEG" style="width: 50%">
-    <img src="img/grandfather.JPG" style="width: 50%">
-    <img src="img/swimming.JPG" style="width: 50%">
-    <img src="img/wedding-church.JPG" style="width: 50%">
-    <img src="img/thanksgiving.JPG" style="width: 50%">
+        </div>
+        <div class="column">
+            <img src="img/grandfather.JPG">
+            <img src="img/swimming.JPG">
+            <img src="img/gizmo.JPEG">
+            <img src="img/friends.JPG">
+        </div>
+    </div>
 </div>
-<footer>
-    <a href="index.html">Return to homepage</a>
-    <p>
-        <a href="hobbies.html">Back to hobbies</a>
-    </p>
+<footer class="gallery-footer">
+    <p id="f-right"><a href="index.html">Return to homepage</a></p>
+    <p id="f-left"><a href="hobbies.html">Back to hobbies</a></p>
 </footer>
 </body>
 </html>

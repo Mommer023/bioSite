@@ -1,5 +1,4 @@
 /*General Styles */
-
 body {
     display: flex;
     background-color: lightgrey;
@@ -26,10 +25,8 @@ footer p {
 footer a {
     text-decoration: none;
     color: white;
-
 }
 
-/**********************************************************************/
 
 /*About Page Styles */
 .about-container {
@@ -73,12 +70,11 @@ div {
     height: 170px;
 }
 
-
 footer {
     width: 100%;
     padding-right: 10px;
-    position: absolute;
-    background-color: teal;
+    position: fixed;
+    background-color: #1A5173;
     bottom: 0;
 }
 footer p {
@@ -97,10 +93,10 @@ footer a {
     display: inline-block;
     font-family: "American Typewriter", sans-serif;
     padding: 10px 40px;
-    background-color: #1A5173; /* Choose your desired background color */
+    background-color: #1A5173;
     text-align: center;
     text-decoration: none;
-    border-radius: 10px; /* Adjust the border-radius to control the roundness */
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     color: white;
@@ -113,10 +109,10 @@ footer a {
     display: inline-block;
     font-family: "American Typewriter", sans-serif;
     padding: 10px 35px;
-    background-color: #1A5173; /* Choose your desired background color */
+    background-color: #1A5173;
     text-align: center;
     text-decoration: none;
-    border-radius: 10px; /* Adjust the border-radius to control the roundness */
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     color: white;
@@ -140,7 +136,6 @@ figure {
     color: #008080;
 
 }
-
 figcaption {
     font-style: italic;
     font-size: 0.75em;
@@ -159,7 +154,7 @@ figcaption {
 }
 .index-grid-container > div {
     text-align: center;
-    padding: 20px 10px;
+    padding: 10px 10px;
 
 }
 .index-grid-container > div > h1 {
@@ -171,10 +166,10 @@ figcaption {
     display: inline-block;
     font-family: "American Typewriter", sans-serif;
     padding: 10px 40px;
-    background-color: #1A5173; /* Choose your desired background color */
+    background-color: #1A5173;
     text-align: center;
     text-decoration: none;
-    border-radius: 10px; /* Adjust the border-radius to control the roundness */
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -227,3 +222,4 @@ figcaption {
 .gallery-container h1 {
     text-align: center;
 }
+
